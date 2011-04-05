@@ -51,5 +51,5 @@ translate([0,0,framerodsize*1.5+vertexwall])rotate([0,-90,-triangle])cylinder(r=
 }
 translate([17,18,0])tappedvertex();
 translate([-17,-18,0])tappedvertex();
-//translate([-17,18,0])untappedvertex();
-//translate([17,-18,0])untappedvertex();
+translate([-17,18,0])untappedvertex();
+translate([17,-18,0])untappedvertex();
