@@ -1,0 +1,49 @@
+Mixtape Mendel
+Copyright (c) 2011, Steve Kelly
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+
+    * Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
+    * Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+    * Neither the name of the <ORGANIZATION> nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+
+
+Thanks to all of the reprappers who have contributed great ideas and refinements.
+Special thanks to prusajr, spacexula, makergear, kliment, shhhh, colah, Adrian Bowyer, Ed Sells, Rhys Jones and everybody else on IRC/thingiverse/wiki that has helped or inspired this project.
+
+Once I figure out how to do a licensing Audit, i will roll the PLA bushings, bar clamps and pulleys in here.
+
+Documentation is still being organized. Below is some rough numbers and totals. This is pulled off my machine. I have yet to get it printing, so everything is still highly alpha level. 
+
+Plan is to document here in the README, then wiki, then begin clean up/improvement of the CAD files for a version 0.3 release that might be usable.
+
+squaring
+verticle sides = 267
+top= 282
+bottom side = 332
+vertex to z clamp = 158
+cross = 268
+vertex to bar clamp for y = 37
+
+Bill of materials
+M8 Nuts - 48
+608 Bearings - 2
+M3x10mm - 12
+M3x12mm - 4
+M4 set screws - 4
+
+smooth rod
+330mm
+360mm
+400mmx2
+270mmx2
+
+MDF
+260mmx140mm
+280mmx230mm
+
+
