@@ -36,14 +36,26 @@ M3x10mm - 12
 M3x12mm - 4
 M4 set screws - 4
 
-smooth rod
+Smooth Rod
 330mm
 360mm
 400mmx2
 270mmx2
 
+Threaded Rod
+333mm x 8
+360mm X 2
+420mm x 2
+230mm x 2
+	Cutting from 1m lengths...
+	1: 333mm, 333mm, 333mm
+	2: 333mm, 333mm, 333mm
+	3: 333mm, 333mm, 230mm
+	4: 420mm, 420mm
+	5: 360mm, 360mm, 230mm
+
 MDF
 260mmx140mm
-280mmx230mm
+260mmx230mm
 
 
