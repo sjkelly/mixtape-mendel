@@ -1,16 +1,16 @@
 //This REALLY REALLY needs to get organized. I will start sorting through it ASAP 
 
-//Vars for the fram vertex. This is still kind of confusing. File is broke sometimes. I would watch this in preview before trusting these values.
+//Vars for the frame vertex. This is still kind of confusing. File is broke sometimes. I would watch this in preview before trusting these values.
 framerodsize = 8.5;
 framerodtap =7; // we use this one in the y motor for the top rod that gets tapped as well
 vertexwall = 3;
 vertexthick = framerodsize*2 + vertexwall*2; // I would say leave this alone. 
 triangle= 60;
-mirror=false;
+mirror=false; // this doesn't work yet. The tapped and untapped sides are modularized, so you can just comment out the ones you don't want in the last 4 lines of the vertex.scad file
 
 // vars for the y motor mount
-vertexhole = 8; //the diameter of the vertex hole in whosawhatasis vertex. Really important these values match.
-partthick =9;
+vertexhole = 8.5; //the diameter of the vertex hole in whosawhatasis vertex. Really important these values match.
+partthick = 9;
 wallmulti = 2; //the wall thickness multiplier
 motorwallmulti = 2.3; //multiplier for the motor holes because you might want them thicker
 centerwallmulti = 1.5; //multiplier for the center hole because you might want them thinner
@@ -27,7 +27,7 @@ centerwallmulti = 1.7;
 motorbody = 43;
 
 partthick = 8;
-toprodbefore =7;
+toprodbefore = 7;
 toproddia = 8.5;
 toprodwall = 4;
 toprodspacing = 72;
@@ -36,7 +36,7 @@ sideroddia = 8;
 siderodwall = 4;
 angle = 60;
 
-zsmoothdia =8;
+zsmoothdia = 8;
 
 xrodspacing = 55; //rod spacing center to center
 xroddia = 8; //rod diamter
@@ -47,11 +47,11 @@ zroddia = 8;
 nutwall = 3; //wall thickness
 zbeforetapdia = 7.5; 
 bushingod = 16;
-bushingtower =xroddia+nutwall*sin(45)+xrodspacing ;
-towergap= 10;
+bushingtower = xroddia+nutwall*sin(45)+xrodspacing ;
+towergap = 10;
 wallmulti = 1.5;
 motorwallmulti = 1.7;
-motorscrew =4;
+motorscrew = 4;
 partthick = 7.5; //thickness of the motor mount
 centerwallmulti = 1.5; // center motor hole multi
 motorcenter = 24;
