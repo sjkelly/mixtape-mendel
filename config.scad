@@ -21,23 +21,15 @@ ywallmulti = 2; //the wall thickness multiplier for the bits that interface with
 ymotorwallmulti = 2.4; //multiplier for the motor holes because you might want them thicker
 ycenterwallmulti = 1.5; //multiplier for the center hole because you might want them thinner
 
-//Top piece vars
+//Top Piece
 motorwallmulti= 1.9;
 centerwallmulti = 1.7;
-motorbody = 43;
-
 partthick = 8;
-toprodbefore = tapsize;
-toproddia = frameroddia;
 toprodwall = 4;
 toprodspacing = 72;
-siderodtap = tapsize;
-sideroddia = frameroddia;
 siderodwall = 4;
-angle = triangle;
 
-zsmoothdia = smoothroddia;
-
+// X End Pieces
 xrodspacing = 55; //rod spacing center to center
 xroddia = smoothroddia; 
 znutdia = 14.8;
