@@ -19,11 +19,10 @@ vertexthick = framerodsize*2 + vertexwall*2; // I would say leave this alone.
 triangle= 60;
 
 //Y Motor Mount
-vertexhole = frameroddia; 
-partthick = 9;
-wallmulti = 2; //the wall thickness multiplier
-motorwallmulti = 2.3; //multiplier for the motor holes because you might want them thicker
-centerwallmulti = 1.5; //multiplier for the center hole because you might want them thinner
+ymountthick = 9;
+ywallmulti = 2; //the wall thickness multiplier for the bits that interface with the frame rod
+ymotorwallmulti = 2.4; //multiplier for the motor holes because you might want them thicker
+ycenterwallmulti = 1.5; //multiplier for the center hole because you might want them thinner
 
 //Top piece vars
 motorwallmulti= 1.9;
