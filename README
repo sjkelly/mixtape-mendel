@@ -1,4 +1,4 @@
-Mixtape Mendel : http://reprap.org/wiki/Mixtape_mendel
+Mixtape Mendel Version 0.2 : http://reprap.org/wiki/Mixtape_mendel
 
 Copyright (c) 2011, Steve Kelly
 
@@ -15,8 +15,6 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
 
 Thanks to all of the reprappers who have contributed great ideas and refinements.
 Special thanks to prusajr, spacexula, makergear, kliment, shhhh, colah, Emakershop, Adrian Bowyer, Ed Sells, Rhys Jones and everybody else on IRC/thingiverse/wiki that has helped or inspired this project.
-
-Once I figure out how to do a licensing Audit, I will roll the PLA bushings, bar clamps and pulleys in here. I think i put the license header in each file rather than the README?
 
 Documentation is still being organized. Below is some rough numbers and totals. This is pulled off my machine. I have yet to get it printing, so everything is still highly alpha level. 
 
@@ -59,4 +57,12 @@ MDF (OK)
 260mmx140mm (Lower bed, you can do elaborate cutouts, like here, https://picasaweb.google.com/tesla893/DropBox#5591547270231319026, to save weight)
 260mmx230mm (Print bed)
 
-
+TODO List:
+Version 0.2
+	Document/cleanup
+Version 0.3
+	X end bushing mounts turned 90 degrees
+	Tapping turned on/off
+	Better x belt routing
+	BSD PLA bushings and bar mount
+	

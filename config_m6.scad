@@ -1,5 +1,21 @@
 //This REALLY REALLY needs to get organized. I will start sorting through it ASAP 
-// This is the config for an M8 Mendel sized printer.
+// This is the config for an M6 Huxley sized printer. 
+
+
+
+
+
+
+
+//Just throwing this out there right now. This will be the ultimate debugging process.
+
+
+
+
+
+
+
+
 
 //Constants (These are used throughout the whole printer)
 frameroddia = 8.5; //the frame rod diameter
@@ -9,7 +25,7 @@ tapsize = 7; //The size of the hole before tapping. 7mm seems to work well.
 nemasize = 1.7; //Nema Size (in imperial)
 motorscrew = 4; //Hole diameter for mounting the motor
 motorcenter = 23; //center hole size for the motor
-tapping = true; //turn tapping on/off, not implemented yet. (Version 0.3) Version 0.2 has tapping by default right now
+tapping = true; //turn tapping on/off, not implemented yet. (Version 0.3)
 
 //Frame Vertex
 framerodsize = 8.5;
