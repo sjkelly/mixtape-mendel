@@ -12,11 +12,8 @@ motorcenter = 23; //center hole size for the motor
 tapping = true; //turn tapping on/off, not implemented yet. (Version 0.3) Version 0.2 has tapping by default right now
 
 //Frame Vertex
-framerodsize = 8.5;
-framerodtap = 7; 
 vertexwall = 3;
-vertexthick = framerodsize*2 + vertexwall*2; // I would say leave this alone. 
-triangle= 60;
+triangle = 60;
 
 //Y Motor Mount
 ymountthick = 9;
