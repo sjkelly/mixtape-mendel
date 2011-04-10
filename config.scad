@@ -9,6 +9,8 @@ tapsize = 7; //The size of the hole before tapping. 7mm seems to work well.
 nemasize = 1.7; //Nema Size (in imperial)
 motorscrew = 4; //Hole diameter for mounting the motor
 motorcenter = 23; //center hole size for the motor
+nutheight = 7;
+nutdia = 14.8;
 tapping = true; //turn tapping on/off, not implemented yet. (Version 0.3) Version 0.2 has tapping by default right now
 
 //Frame Vertex
@@ -31,19 +33,17 @@ siderodwall = 4;
 
 // X End Pieces
 xrodspacing = 55; //rod spacing center to center
-xroddia = smoothroddia; 
-znutdia = 14.8;
-znuth = 7; //znut height
-zroddia = smoothroddia;
+//xroddia = 8; //rod diamter
+//znutdia = 14.8;
+//znuth = 7; //znut height
+//zroddia = 8;
 nutwall = 3; //wall thickness
-zbeforetapdia = tapsize; 
-bushingtower = xroddia+nutwall*sin(45)+xrodspacing ;
-towergap = 10;
-wallmulti = 1.5;
-motorwallmulti = 1.7;
-partthick = 7.5; //thickness of the motor mount
-centerwallmulti = 1.5; // center motor hole multi
-supportwidth = 17;
+//zbeforetapdia = 7; 
+//bushingtower = xroddia+nutwall*sin(45)+xrodspacing;
+towergap= 10;
+idlerthick = 4.5;
+idlerwidth = 4.5;
+idlergap = 8;
 
 //X Carriage 
 carriagewidth = 60;
