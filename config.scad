@@ -33,17 +33,17 @@ siderodwall = 4;
 
 // X End Pieces
 xrodspacing = 55; //rod spacing center to center
-//xroddia = 8; //rod diamter
-//znutdia = 14.8;
-//znuth = 7; //znut height
-//zroddia = 8;
 nutwall = 3; //wall thickness
-//zbeforetapdia = 7; 
-//bushingtower = xroddia+nutwall*sin(45)+xrodspacing;
 towergap= 10;
+// Idler
 idlerthick = 4.5;
 idlerwidth = 4.5;
 idlergap = 8;
+//Motor
+wallmulti = 1.5;
+motorwallmulti = 1.7;
+partthick = 6; //thickness of the motor mount
+centerwallmulti = 1.5; // center motor hole multi
 
 //X Carriage 
 carriagewidth = 60;
