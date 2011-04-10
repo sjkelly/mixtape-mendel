@@ -42,7 +42,7 @@ idlergap = 8;
 //Motor
 wallmulti = 1.5;
 motorwallmulti = 1.7;
-partthick = 6; //thickness of the motor mount
+partthick = 8; //thickness of the motor mount (6 works well, need to decouple from top piece)
 centerwallmulti = 1.5; // center motor hole multi
 
 //X Carriage 
