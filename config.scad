@@ -33,15 +33,15 @@ siderodwall = 4;
 
 // X End Pieces
 xrodspacing = 55; //rod spacing center to center
-nutwall = 3; //wall thickness
-towergap= 10;
+nutwall = 3; //wall thickness around nut and bushing
+towergap= 10; // 0.75 diameter wrap should be ok i think. Make a flag for full wrap and no square for bushings/linear bearings maybe?
 // Idler
-idlerthick = 4.5;
-idlerwidth = 4.5;
-idlergap = 8;
+idlerthick = 4.5; //no
+idlerwidth = 4.5; //no
+idlergap = 8; //no
 //Motor
-wallmulti = 1.5;
-motorwallmulti = 1.7;
+wallmulti = 1.5; //no
+motorwallmulti = 1.7; //no
 partthick = 8; //thickness of the motor mount (6 works well, need to decouple from top piece)
 centerwallmulti = 1.5; // center motor hole multi
 
@@ -59,6 +59,13 @@ pulleydia = 12;
 beltthick = 2;
 clampthick = 4;
 clampholedia = 4;
+
+//Extruder
+
+//Groove Mount
+	//Default is pretty good for MakerGear insulators
+groovedia = 12;
+grooveheight = 4.5;
 
 //pen holder 
 penwall = 3 ;
