@@ -11,7 +11,12 @@ motorscrew = 4; //Hole diameter for mounting the motor
 motorcenter = 23; //center hole size for the motor
 nutheight = 7;
 nutdia = 14.8;
+beltthick = 2; //Thickness of the timing belt
+bearingid = 8; // 608
+bearingod = 22; // 608
+bearinginnerrace = 12; // the amount of the inner race exposed
 tapping = true; //turn tapping on/off, not implemented yet. (Version 0.3) Version 0.2 has tapping by default right now
+layerheight = 0.32; //skeinforge layer height, used for the idler wasers right now
 
 //Frame Vertex
 vertexwall = 3;
@@ -56,7 +61,6 @@ adapterholedia = 4;
 platformthick = 10;
 platformextension = 40; 
 pulleydia = 12;
-beltthick = 2;
 clampthick = 4;
 clampholedia = 4;
 
