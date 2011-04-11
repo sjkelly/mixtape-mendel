@@ -16,7 +16,7 @@ bearingid = 8; // 608
 bearingod = 22; // 608
 bearinginnerrace = 12; // the amount of the inner race exposed
 tapping = true; //turn tapping on/off, not implemented yet. (Version 0.3) Version 0.2 has tapping by default right now
-layerheight = 0.32; //skeinforge layer height, used for the idler wasers right now
+layerheight = 0.32; //skeinforge/slicer layer height, used for the idler wasers right now
 
 //Frame Vertex
 vertexwall = 3;
