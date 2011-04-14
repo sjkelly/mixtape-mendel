@@ -4,11 +4,13 @@
 frameroddia = 8.5; //the frame rod diameter
 smoothroddia = 8.5; //the smooth rod diameter
 bushingod = 16; //The prusabushing OD, you can change this to 15 to use LM8UU linear bearings 
+bushingheight = 11;
 tapsize = 7; //The size of the hole before tapping. 7mm seems to work well.
 
 nemasize = 1.7; //Nema Size (in imperial)
 motorscrew = 4; //Hole diameter for mounting the motor
 motorcenter = 23; //center hole size for the motor
+motorshaftdia = 5; // Motor shaft diameter
 
 nutheight = 7;
 nutdia = 14.8;
@@ -37,6 +39,10 @@ ycenterwallmulti = 1.5; //multiplier for the center hole because you might want 
 clampthick = 4;
 clampholedia = 4;
 clampholewall = 3;
+
+//Y Bushing Holders
+holderwall = 3;
+holedia = 4;
 
 //Top Piece
 motorwallmulti= 1.9;
@@ -74,6 +80,11 @@ pulleydia = 12;
 clampthick = 4;
 clampholedia = 4;
 
+//Z Coupler
+couplerwall = 4;
+setscrewdia = 3;
+couplerheight = 34;
+ 
 //Extruder
 
 //Groove Mount
