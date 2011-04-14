@@ -44,6 +44,9 @@ clampholewall = 3;
 holderwall = 3;
 holedia = 4;
 
+//Bar Clamps
+barclampwall = 4;
+
 //Top Piece
 motorwallmulti= 1.9;
 centerwallmulti = 1.7;
