@@ -97,7 +97,6 @@ clampholedia = 4;
 
 //Z Coupler
 couplerwall = 4;
-setscrewdia = secscrewtap;
 couplerheight = 34;
  
 //Extruder

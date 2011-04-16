@@ -28,6 +28,6 @@ difference(){
 	}
 cylinder(r=motorshaftdia/2, h= couplerheight/2);
 translate([0,0,couplerheight/2])cylinder(r=tapsize/2, h= couplerheight/2);
-translate([0,0,couplerheight/4])rotate([90,0,0])cylinder(r=setscrewdia/2, h= couplerheight/2);
-translate([0,0,couplerheight*0.75])rotate([90,0,0])cylinder(r=setscrewdia/2, h= couplerheight/2);
+translate([0,0,couplerheight/4])rotate([90,0,0])cylinder(r=secscrewtap/2, h= couplerheight/2);
+translate([0,0,couplerheight*0.75])rotate([90,0,0])cylinder(r=secscrewtap/2, h= couplerheight/2);
 }
