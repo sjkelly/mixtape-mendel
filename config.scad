@@ -109,5 +109,4 @@ grooveheight = 4.5;
 
 //pen holder 
 penwall = 3 ;
-holdingscrewdia = secscrewtap;
 shaftheight = 30;
