@@ -38,9 +38,9 @@ difference(){
 	translate([0,bushingod/2+nutwall,0])rotate([0,0,30])cylinder(r=nutdia/2+nutwall, h=nutheight, $fn=6);
 	
 	//idler slides
-	translate([nutwall+bushingod/2+smoothroddia/sin(45)+1,bushingod/2+nutwall+nutdia-idlerwidth,smoothroddia+nutwall*sin(45)])cube([idlerthick,idlerwidth,xrodspacing]);	
-	translate([nutwall+bushingod/2+smoothroddia/sin(45)+1,bushingod/2+nutwall+nutdia-idlerwidth*2-idlergap,smoothroddia+nutwall*sin(45)])cube([idlerthick,idlerwidth,xrodspacing]);	
-	translate([nutwall+bushingod/2+smoothroddia/sin(45)+1,bushingod/2+nutwall+nutdia-idlerwidth-idlergap/2,smoothroddia+nutwall*sin(45)+xrodspacing])rotate([0,90,0])cylinder(r=idlergap/2+idlerwidth,h=idlerthick);
+	translate([nutwall+bushingod/2+smoothroddia/sin(45)+1,bushingod/2+nutwall,smoothroddia+nutwall*sin(45)])cube([frameroddia/2,nutdia,xrodspacing/2-bearingod/2+pulleydia-beltthick/2]);	
+	translate([nutwall+bushingod/2+smoothroddia/sin(45)+1,bushingod/2+nutwall-(nutwall/sin(45)),smoothroddia+nutwall*sin(45)])cube([frameroddia/2,(nutwall/sin(45)),xrodspacing]);	
+	translate([nutwall+bushingod/2+smoothroddia/sin(45)+1,bushingod/2+nutwall+nutdia-(nutwall/sin(45))-frameroddia/2,smoothroddia+nutwall*sin(45)+xrodspacing/2-bearingod/2+pulleydia-beltthick/2])rotate([0,90,0])cylinder(r=frameroddia/2+(nutwall/sin(45)),h=frameroddia/2);
 	
 	}
 	
@@ -60,8 +60,7 @@ difference(){
 		}	
 
 	//idler sides
-	translate([nutwall+bushingod/2+smoothroddia/sin(45)+1,bushingod/2+nutwall+nutdia-idlerwidth-idlergap/2,smoothroddia+nutwall*sin(45)+xrodspacing])rotate([0,90,0])cylinder(r=idlergap/2,h=idlerthick);
-	translate([nutwall+bushingod/2+smoothroddia/sin(45),bushingod/2+nutwall+nutdia-idlerwidth-idlergap,smoothroddia+nutwall*sin(45)+xrodspacing-idlergap-idlerwidth])cube([idlerthick+2,idlergap,idlergap+idlerwidth]);	
+	translate([nutwall+bushingod/2+smoothroddia/sin(45)+1,bushingod/2+nutwall+nutdia-(nutwall/sin(45))-frameroddia/2,smoothroddia+nutwall*sin(45)+xrodspacing/2-bearingod/2+pulleydia-beltthick/2])rotate([0,90,0])cylinder(r=frameroddia/2,h=frameroddia/2);
 	
 	//leadscrew
 	translate([0,bushingod/2+nutdia/2+nutwall,0])rotate([0,0,30])cylinder(r=nutdia/2, h=nutheight, $fn=6);
