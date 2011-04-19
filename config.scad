@@ -8,11 +8,10 @@ bushingheight = 11;
 tapsize = 7; //The size of the hole before tapping. 7mm seems to work well.
 
 nemasize = 1.7; //Nema Size (in imperial)
-motorscrew = secscrewdia; //Hole diameter for mounting the motor
 motorcenter = 23; //center hole size for the motor. If your motor center flange is smaller you can beef up parts this way. 
 motorshaftdia = 5; // Motor shaft diameter
-motortabwall = 3;
-motorcirclewall = 5;
+motortabwall = 2;
+motorcenterwall = 5;
 
 pulleypitch = 5;
 pulleyteeth = 8;
@@ -38,10 +37,6 @@ bearinginnerrace = 12; // the amount of the inner race diameter exposed
 tapping = true; //turn tapping on/off, not implemented yet. (Version 0.3 might implement this) Version 0.2 has tapping by default right now
 layerheight = 0.32; //skeinforge/slicer layer height, used for the idler wasers right now. 
 
-//Tab (Dog Ears) variables
-//Mixtape mendel uses tabs a lot. Tabs are efficient use of material and print very strong. The following variables will break up the tab aplications
-motortabwall = 3;
-
 //Frame Vertex
 vertexwall = 3;
 triangle = 60; // the angle the bottom vertexes have relative to horizontal
@@ -54,43 +49,33 @@ ycenterwallmulti = 1.5; //multiplier for the center hole because you might want 
 
 //Y Belt Clamps
 clampthick = 4;
-clampholedia = secscrewdia;
 clampholewall = 3;
 
 //Bar Clamps
 barclampwall = 4;
 
 //Top Piece
-motorwallmulti= 1.9;
-centerwallmulti = 1.7;
 partthick = 8;
 toprodwall = 4;
 toprodspacing = 72;
 siderodwall = 4;
 
 // X End Pieces
-xrodspacing = 55; //rod spacing center to center
+xrodspacing = 50; //rod spacing center to center
 nutwall = 3; //wall thickness around nut and bushing
 towergap= 10; // 0.75 diameter wrap should be ok i think. Make a flag for full wrap and no square for bushings/linear bearings maybe?
-// Idler
-idlerthick = 4.5; //no
-idlerwidth = 4.5; //no
-idlergap = 8; //no
 //Motor
-wallmulti = 1.5; //no
-motorwallmulti = 1.7; //no
-partthick = 8; //thickness of the motor mount (6 works well, need to decouple from top piece)
-centerwallmulti = 1.5; // center motor hole multi
+motorinterface = 6; //thickness of the motor mount (6 works well, need to decouple from top piece)
 
 //X Carriage 
-carriagewidth = 60;
+carriagewidth = 50;
 bushingwall = 3;
 backwall = 5;
 tools = 2;
-tool1dia = 16;
-tool2dia = 16;
+tool1dia = 17;
+tool2dia = 17;
 adapterholedia = secscrewdia;
-platformthick = 10;
+platformthick = 7;
 platformextension = 40; 
 clampthick = 4;
 clampholedia = 4;
@@ -99,7 +84,15 @@ clampholedia = 4;
 couplerwall = 4;
 couplerheight = 34;
  
-//Extruder
+//Extruder (Plastic Pusher)
+extruderthick = 5;
+bowdencabledia = 4;
+bowdenwall = 3;
+idlerwall = 2;
+pinchwheeldia = 8;
+
+//Utility Clamp 
+utilityclampwall = 3;
 
 //Groove Mount
 	//Default is pretty good for MakerGear insulators
