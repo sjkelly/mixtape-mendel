@@ -23,18 +23,18 @@ difference(){
 union(){
 		translate([0,0,(frameroddia/2+toprodwall)])rotate([-90,0,0])cylinder(r=frameroddia/2+toprodwall, h=nemasize*2.54*10*sin(45));
 		translate([toprodspacing,0,(frameroddia/2+toprodwall)])rotate([-90,0,0])cylinder(r=frameroddia/2+toprodwall, h=nemasize*2.54*10*sin(45));
-		translate([-frameroddia/4-toprodwall,0,0])cube([toprodspacing+(frameroddia/4+toprodwall)*2,nemasize*2.54*10*sin(45),partthick]);
+		translate([-frameroddia/4-toprodwall,0,0])cube([toprodspacing+(frameroddia/4+toprodwall)*2,nemasize*2.54*10*sin(45),toppiecethick]);
 		translate([toprodspacing/2-(nemasize*2.54*sin(45)*5),siderodwall+frameroddia/2-(nemasize*2.54*sin(45)*5)+bushingod/2+nutdia/2+nutwall,0]){
 		//motor construction
-		translate([nemasize*2.54*sin(45)*10,nemasize*2.54*sin(45)*10,0])cylinder(r=motorscrew/2*motorwallmulti, h=partthick);
-		translate([0,nemasize*2.54*sin(45)*10,0])cylinder(r=motorscrew/2*motorwallmulti, h=partthick);
-		translate([nemasize*2.54*sin(45)*10,0,0])cylinder(r=motorscrew/2*motorwallmulti, h=partthick);
-		translate([0,0,0])cylinder(r=motorscrew/2*motorwallmulti, h=partthick);
-		translate([nemasize*2.54*sin(45)*5,nemasize*2.54*sin(45)*5,0])cylinder(r=motorcenter/2*centerwallmulti, h=partthick); //motorcenter
-		translate([-motorscrew/2*motorwallmulti*sin(45),motorscrew/2*motorwallmulti*sin(45),0])rotate([0,0,-45])cube([motorscrew*motorwallmulti,nemasize*2.54*10,partthick]);
-		translate([nemasize*2.54*sin(45)*10-(motorscrew/2*motorwallmulti*sin(45)),-motorscrew/2*motorwallmulti*sin(45),0])rotate([0,0,45])cube([motorscrew*motorwallmulti,nemasize*2.54*10,partthick]);
+		translate([nemasize*2.54*sin(45)*10,nemasize*2.54*sin(45)*10,0])cylinder(r=(secscrewdia/2+motortabwall), h=toppiecethick);
+		translate([0,nemasize*2.54*sin(45)*10,0])cylinder(r=(secscrewdia/2+motortabwall), h=toppiecethick);
+		translate([nemasize*2.54*sin(45)*10,0,0])cylinder(r=(secscrewdia/2+motortabwall), h=toppiecethick);
+		translate([0,0,0])cylinder(r=(secscrewdia/2+motortabwall), h=toppiecethick);
+		translate([nemasize*2.54*sin(45)*5,nemasize*2.54*sin(45)*5,0])cylinder(r=motorcenter/2+motorcenterwall, h=toppiecethick); //motorcenter
+		translate([-(secscrewdia/2+motortabwall)*sin(45),(secscrewdia/2+motortabwall)*sin(45),0])rotate([0,0,-45])cube([secscrewdia+motortabwall*2,nemasize*2.54*10,toppiecethick]);
+		translate([nemasize*2.54*sin(45)*10-((secscrewdia/2+motortabwall)*sin(45)),-(secscrewdia/2+motortabwall)*sin(45),0])rotate([0,0,45])cube([secscrewdia+motortabwall*2,nemasize*2.54*10,toppiecethick]);
 			}
-		translate([toprodspacing/2,frameroddia+siderodwall*2,-1])cylinder(r=smoothroddia/2+siderodwall,h=partthick);
+		translate([toprodspacing/2,frameroddia+siderodwall*2,-1])cylinder(r=smoothroddia/2+siderodwall,h=toppiecethick);
 			
 		translate([toprodspacing-cos(triangle/2)*frameroddia/2-frameroddia,frameroddia/2+siderodwall,cos(triangle/2)*frameroddia/2])rotate([0,triangle/2,0])cylinder(r=frameroddia/2+siderodwall, h=(frameroddia+toprodwall*2));
 		translate([cos(triangle/2)*frameroddia/2+frameroddia,frameroddia/2+siderodwall,cos(triangle/2)*frameroddia/2])rotate([0,-triangle/2,0])cylinder(r=frameroddia/2+siderodwall, h=(frameroddia+toprodwall*2));
@@ -50,15 +50,15 @@ union(){
 		
 	
 		
-		translate([toprodspacing/2,frameroddia/2+siderodwall,-1])cylinder(r=smoothroddia/2,h=partthick+2);
+		translate([toprodspacing/2,frameroddia/2+siderodwall,-1])cylinder(r=smoothroddia/2,h=toppiecethick+2);
 
 		translate([toprodspacing/2-(nemasize*2.54*sin(45)*5),siderodwall+frameroddia/2-(nemasize*2.54*sin(45)*5)+bushingod/2+nutdia/2+nutwall,0]){
 		//motor screws
-		translate([nemasize*2.54*sin(45)*10,nemasize*2.54*sin(45)*10,0])cylinder(r=motorscrew/2, h=partthick);
-		translate([0,nemasize*2.54*sin(45)*10,0])cylinder(r=motorscrew/2, h=partthick);
-		translate([nemasize*2.54*sin(45)*10,0,0])cylinder(r=motorscrew/2, h=partthick);
-		translate([0,0,0])cylinder(r=motorscrew/2, h=partthick);
-		translate([nemasize*2.54*sin(45)*5,nemasize*2.54*sin(45)*5,0])cylinder(r=motorcenter/2, h=partthick); //motorcenter
+		translate([nemasize*2.54*sin(45)*10,nemasize*2.54*sin(45)*10,0])cylinder(r=secscrewdia/2, h=toppiecethick);
+		translate([0,nemasize*2.54*sin(45)*10,0])cylinder(r=secscrewdia/2, h=toppiecethick);
+		translate([nemasize*2.54*sin(45)*10,0,0])cylinder(r=secscrewdia/2, h=toppiecethick);
+		translate([0,0,0])cylinder(r=secscrewdia/2, h=toppiecethick);
+		translate([nemasize*2.54*sin(45)*5,nemasize*2.54*sin(45)*5,0])cylinder(r=motorcenter/2, h=toppiecethick); //motorcenter
 			}
 
 }

@@ -10,23 +10,23 @@ tapsize = 7; //The size of the hole before tapping. 7mm seems to work well.
 nemasize = 1.7; //Nema Size (in imperial)
 motorcenter = 23; //center hole size for the motor. If your motor center flange is smaller you can beef up parts this way. 
 motorshaftdia = 5; // Motor shaft diameter
-motortabwall = 2;
 motorcenterwall = 5;
+motorbody = 43;
 
 pulleypitch = 5;
 pulleyteeth = 8;
 pulleydia = 12; // this will be replaced by the above soon
 
 /* The Mixtape Mendel uses two types of fasteners. One is the "primary" type, which is the larger type that builds the structure,
- which was profiled above as "frameroddia, etc..". In the case of the Mendel, it is M8 threaded rod. It also uses "Secondary" hardware. This is a smaller screw used to retain tool heads, attach motors and lock pulleys on shafts. In the case of Mendel this is M3. 
+ which was profiled above as "frameroddia, etc..". In the case of the Mendel, it is M8 threaded rod (Huxley, M6). It also uses "Secondary" hardware. This is a smaller screw used to retain tool heads, attach motors and lock pulleys on shafts. In the case of Mendel this is M3 or M4. M3 is preferred as it is cheaper. Tapping is quite the challenge though. 
 */
 nutheight = 7; //Primary
 nutdia = 14.8; //Primary
 secscrewdia = 4; //secondary 
-secscrewtap = 2; // secondary
+secscrewtap = 2.5; // secondary
 
 beltthick = 2; //Thickness of the timing belt
-beltwidth = 7; // Belt width, used for the y bed clamps
+beltwidth = 7; // Belt width, used for the y bed clamps so can be a little bugger than actual
 
 mdfthick = 6; //thickness of MDF (You can use other wood, acrylic, lexan, etc)
 
@@ -37,6 +37,9 @@ bearinginnerrace = 12; // the amount of the inner race diameter exposed
 tapping = true; //turn tapping on/off, not implemented yet. (Version 0.3 might implement this) Version 0.2 has tapping by default right now
 layerheight = 0.32; //skeinforge/slicer layer height, used for the idler wasers right now. 
 
+//Beef/tab/wall
+motortabwall = 2.5;
+
 //Frame Vertex
 vertexwall = 3;
 triangle = 60; // the angle the bottom vertexes have relative to horizontal
@@ -44,18 +47,16 @@ triangle = 60; // the angle the bottom vertexes have relative to horizontal
 //Y Motor Mount
 ymountthick = 9;
 ywallmulti = 2; //the wall thickness multiplier for the bits that interface with the frame rod
-ymotorwallmulti = 2.4; //multiplier for the motor holes because you might want them thicker
-ycenterwallmulti = 1.5; //multiplier for the center hole because you might want them thinner
 
 //Y Belt Clamps
-clampthick = 4;
 clampholewall = 3;
+	//(bushingod-pulleydia)/2
 
 //Bar Clamps
 barclampwall = 4;
 
 //Top Piece
-partthick = 8;
+toppiecethick = 8;
 toprodwall = 4;
 toprodspacing = 72;
 siderodwall = 4;
@@ -71,18 +72,14 @@ motorinterface = 6; //thickness of the motor mount (6 works well, need to decoup
 carriagewidth = 50;
 bushingwall = 3;
 backwall = 5;
-tools = 2;
-tool1dia = 17;
-tool2dia = 17;
-adapterholedia = secscrewdia;
+tooldia = 17;
 platformthick = 7;
 platformextension = 40; 
-clampthick = 4;
-clampholedia = 4;
+clampthick = 4; //The two pieces that clamp around the belt
 
 //Z Coupler
 couplerwall = 4;
-couplerheight = 34;
+couplerheight = 34; // Make this double 3/4 your shaft length
  
 //Extruder (Plastic Pusher)
 extruderthick = 5;

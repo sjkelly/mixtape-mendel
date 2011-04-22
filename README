@@ -20,13 +20,7 @@ Mixtape Mendel Version 0.2 : http://reprap.org/wiki/Mixtape_mendel
 
 
 Thanks to all of the reprappers who have contributed great ideas and refinements.
-Special thanks to prusajr, spacexula, makergear, kliment, shhhh, colah, Emakershop, Adrian Bowyer, Ed Sells, Rhys Jones and everybody else on IRC/thingiverse/wiki that has helped or inspired this project.
-
-Documentation is still being organized. Below is some rough numbers and totals. This is pulled off my machine. I have yet to get it printing, so everything is still highly alpha level. 
-
-Plan is to document here in the README, then wiki, then begin clean up/improvement of the CAD files for a version 0.3 release that might be usable.
-
-
+Special thanks to jmil(Sent me the link to the Google Science Fair!), prusajr, spacexula, makergear, kliment, shhhh, colah, Emakershop, Adrian Bowyer, Ed Sells, Rhys Jones and everybody else on IRC/thingiverse/wiki that has helped or inspired this project.
 
 Squaring (not even close to complete)
 verticle sides = 267
@@ -86,8 +80,13 @@ Version 0.2
 	Extruder/ Bowden couplings
 	Document/cleanup
 	Huxley Class config
+	better x belt routing
+	no more multipliers
 Version 0.3
 	X end bushing mounts turned 90 degrees
 	Tapping turned on/off
-	Better x belt routing
-	NO MORE MULTIPLIERS
+	vertex feet
+	Utilize motor width on y mount
+	Pulley script (T5 T2.5)
+	Endstops
+

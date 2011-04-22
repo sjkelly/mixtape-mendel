@@ -40,16 +40,16 @@ difference(){
 
 	//motor construction
 		translate([bushingod/2+nutwall,bushingod/2+nutwall*2+nutdia,smoothroddia+nutwall*sin(45)+xrodspacing/2-nemasize*2.54*5*sin(45)])rotate([0,-90,0]){
-		translate([nemasize*2.54*sin(45)*10,nemasize*2.54*sin(45)*10,0])cylinder(r=motorscrew/2*motorwallmulti, h=partthick);
-		translate([0,nemasize*2.54*sin(45)*10,0])cylinder(r=motorscrew/2*motorwallmulti, h=partthick);
-		translate([nemasize*2.54*sin(45)*10,0,0])cylinder(r=motorscrew/2*motorwallmulti, h=partthick);
-		translate([0,0,0])cylinder(r=motorscrew/2*motorwallmulti, h=partthick);
+		translate([nemasize*2.54*sin(45)*10,nemasize*2.54*sin(45)*10,0])cylinder(r=(secscrewdia/2+motortabwall), h=partthick);
+		translate([0,nemasize*2.54*sin(45)*10,0])cylinder(r=(secscrewdia/2+motortabwall), h=partthick);
+		translate([nemasize*2.54*sin(45)*10,0,0])cylinder(r=(secscrewdia/2+motortabwall), h=partthick);
+		translate([0,0,0])cylinder(r=(secscrewdia/2+motortabwall), h=partthick);
 		translate([nemasize*2.54*sin(45)*5,nemasize*2.54*sin(45)*5,0])cylinder(r=motorcenter/2*centerwallmulti, h=partthick); //motorcenter
-		translate([-motorscrew/2*motorwallmulti*sin(45),motorscrew/2*motorwallmulti*sin(45),0])rotate([0,0,-45])cube([motorscrew*motorwallmulti,nemasize*2.54*10,partthick]);
-		translate([nemasize*2.54*sin(45)*10-(motorscrew/2*motorwallmulti*sin(45)),-motorscrew/2*motorwallmulti*sin(45),0])rotate([0,0,45])translate([-(smoothroddia+xrodspacing/2-nemasize*2.54*5*sin(45))/sin(45),0,0])cube([motorscrew*motorwallmulti+(smoothroddia+xrodspacing/2-nemasize*2.54*5*sin(45))/sin(45),nemasize*2.54*10,partthick]);
-		translate([nemasize*2.54*sin(45)*10-(motorscrew/2*motorwallmulti*sin(45)),-motorscrew/2*motorwallmulti*sin(45),0])rotate([0,0,45])translate([-(smoothroddia+xrodspacing/2-nemasize*2.54*5*sin(45))/sin(45)+motorscrew/2*motorwallmulti,motorscrew/2*wallmulti,0])cube([(smoothroddia+xrodspacing/2-nemasize*2.54*5*sin(45))/sin(45),nemasize*2.54*10,partthick]);
-		rotate([0,90,0])translate([-1,(nemasize*2.54*5*sin(45))-partthick/2,-smoothroddia/sin(45)-nutwall*2/sin(45)-motorscrew/2])cube([partthick+1,partthick,nemasize*10*2.54]);
-		rotate([0,90,0])translate([0,(nemasize*2.54*5*sin(45))+partthick/2,-smoothroddia/sin(45)-nutwall*2/sin(45)-motorscrew/2])rotate([0,0,180])cube([partthick,bushingod/2+nutwall*2+nutdia+nemasize*2.54*sin(45)*5,nemasize*10*2.54]);
+		translate([-(secscrewdia/2+motortabwall)*sin(45),(secscrewdia/2+motortabwall)*sin(45),0])rotate([0,0,-45])cube([secscrewdia*motorwallmulti,nemasize*2.54*10,partthick]);
+		translate([nemasize*2.54*sin(45)*10-((secscrewdia/2+motortabwall)*sin(45)),-(secscrewdia/2+motortabwall)*sin(45),0])rotate([0,0,45])translate([-(smoothroddia+xrodspacing/2-nemasize*2.54*5*sin(45))/sin(45),0,0])cube([secscrewdia*motorwallmulti+(smoothroddia+xrodspacing/2-nemasize*2.54*5*sin(45))/sin(45),nemasize*2.54*10,partthick]);
+		translate([nemasize*2.54*sin(45)*10-((secscrewdia/2+motortabwall)*sin(45)),-(secscrewdia/2+motortabwall)*sin(45),0])rotate([0,0,45])translate([-(smoothroddia+xrodspacing/2-nemasize*2.54*5*sin(45))/sin(45)+(secscrewdia/2+motortabwall),secscrewdia/2*wallmulti,0])cube([(smoothroddia+xrodspacing/2-nemasize*2.54*5*sin(45))/sin(45),nemasize*2.54*10,partthick]);
+		rotate([0,90,0])translate([-1,(nemasize*2.54*5*sin(45))-partthick/2,-smoothroddia/sin(45)-nutwall*2/sin(45)-secscrewdia/2])cube([partthick+1,partthick,nemasize*10*2.54]);
+		rotate([0,90,0])translate([0,(nemasize*2.54*5*sin(45))+partthick/2,-smoothroddia/sin(45)-nutwall*2/sin(45)-secscrewdia/2])rotate([0,0,180])cube([partthick,bushingod/2+nutwall*2+nutdia+nemasize*2.54*sin(45)*5,nemasize*10*2.54]);
 		rotate([0,90,0])translate([partthick/2,nemasize*2.54*5*sin(45),nemasize*2.54*5*sin(45)])rotate([0,45,180])cube([partthick/sin(45)*0.5,bushingod/2+nutwall*2+nutdia+nemasize*2.54*sin(45)*5,partthick/sin(45)*0.5]);
 			}
 
@@ -78,10 +78,10 @@ difference(){
 	translate([0,bushingod/2+nutdia/2+nutwall,nutheight])rotate([0,0,30])cylinder(r=tapsize/2, h=nutheight);
 	//motor screws
 		translate([bushingod/2+nutwall,bushingod/2+nutwall*2+nutdia,smoothroddia+nutwall*sin(45)+xrodspacing/2-nemasize*2.54*5*sin(45)])rotate([0,-90,0]){
-		translate([nemasize*2.54*sin(45)*10,nemasize*2.54*sin(45)*10,-1])cylinder(r=motorscrew/2, h=partthick+2);
-		translate([0,nemasize*2.54*sin(45)*10,-1])cylinder(r=motorscrew/2, h=partthick+2);
-		translate([nemasize*2.54*sin(45)*10,0,-1])cylinder(r=motorscrew/2, h=partthick+2);
-		translate([0,0,-1])cylinder(r=motorscrew/2, h=partthick+2);
+		translate([nemasize*2.54*sin(45)*10,nemasize*2.54*sin(45)*10,-1])cylinder(r=secscrewdia/2, h=partthick+2);
+		translate([0,nemasize*2.54*sin(45)*10,-1])cylinder(r=secscrewdia/2, h=partthick+2);
+		translate([nemasize*2.54*sin(45)*10,0,-1])cylinder(r=secscrewdia/2, h=partthick+2);
+		translate([0,0,-1])cylinder(r=secscrewdia/2, h=partthick+2);
 		translate([nemasize*2.54*sin(45)*5,nemasize*2.54*sin(45)*5,-1-partthick])cylinder(r=motorcenter/2, h=partthick*2+2); //motorcenter
 			}
 		
