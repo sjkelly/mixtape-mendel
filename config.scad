@@ -88,6 +88,9 @@ bowdenwall = 3;
 idlerwall = 2;
 pinchwheeldia = 8;
 
+//Mendel Bowden Mount
+mountspacing = 50;
+
 //Utility Clamp 
 utilityclampwall = 3;
 

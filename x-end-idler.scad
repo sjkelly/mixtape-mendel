@@ -60,7 +60,7 @@ difference(){
 		}	
 
 	//idler sides
-	translate([nutwall+bushingod/2+smoothroddia/sin(45)+1,bushingod/2+nutwall+nutdia-(nutwall/sin(45))-frameroddia/2,smoothroddia+nutwall*sin(45)+xrodspacing/2-bearingod/2+pulleydia-beltthick/2])rotate([0,90,0])cylinder(r=frameroddia/2,h=frameroddia/2);
+	translate([nutwall+bushingod/2+smoothroddia/sin(45)+1-1,bushingod/2+nutwall+nutdia-(nutwall/sin(45))-frameroddia/2,smoothroddia+nutwall*sin(45)+xrodspacing/2-bearingod/2+pulleydia-beltthick/2])rotate([0,90,0])cylinder(r=frameroddia/2,h=frameroddia/2+2);
 	
 	//leadscrew
 	translate([0,bushingod/2+nutdia/2+nutwall,0])rotate([0,0,30])cylinder(r=nutdia/2, h=nutheight, $fn=6);
