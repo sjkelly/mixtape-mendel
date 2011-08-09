@@ -15,37 +15,43 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-//TODO
-//*Motor right up on frame rod
-
 include <config.scad>;
 $fn = 31;
 
-//construction
 	difference(){
+
 		union(){
-		//vertex interfaces
-		translate([nemasize*2.54*10,nemasize*2.54*5*sin(45),0])cylinder(r=frameroddia/2*ywallmulti, h=ymountthick);
-		translate([frameroddia*3*sin(45)+(nemasize*2.54*10),nemasize*2.54*5*sin(45)-frameroddia*3*sin(45),0])cylinder(r=frameroddia/2*ywallmulti, h=ymountthick);
-		//connetors
-		translate([nemasize*2.54*10-(sin(45)*frameroddia/2*ywallmulti),nemasize*2.54*5*sin(45)-frameroddia/2*ywallmulti*sin(45),0])rotate([0,0,-45])cube([frameroddia*3,frameroddia*ywallmulti,ymountthick]);
-		translate([nemasize*2.54*5*sin(45),nemasize*2.54*5*sin(45)-frameroddia/2*ywallmulti,0])cube([nemasize*2.54*5+frameroddia/2*ywallmulti,frameroddia*ywallmulti,ymountthick]);
-		//motor construction
-		translate([nemasize*2.54*sin(45)*10,nemasize*2.54*sin(45)*10,0])cylinder(r=(secscrewdia/2+motortabwall), h=ymountthick);
-		translate([0,nemasize*2.54*sin(45)*10,0])cylinder(r=(secscrewdia/2+motortabwall), h=ymountthick);
-		translate([nemasize*2.54*sin(45)*10,0,0])cylinder(r=(secscrewdia/2+motortabwall), h=ymountthick);
-		translate([0,0,0])cylinder(r=(secscrewdia/2+motortabwall), h=ymountthick);
-		translate([nemasize*2.54*sin(45)*5,nemasize*2.54*sin(45)*5,0])cylinder(r=motorcenter/2+motorcenterwall, h=ymountthick); //motorcenter
-		translate([-(secscrewdia/2+motortabwall)*sin(45),(secscrewdia/2+motortabwall)*sin(45),0])rotate([0,0,-45])cube([(secscrewdia+motortabwall*2),nemasize*2.54*10,ymountthick]);
-		translate([nemasize*2.54*sin(45)*10-((secscrewdia/2+motortabwall)*sin(45)),-(secscrewdia/2+motortabwall)*sin(45),0])rotate([0,0,45])cube([(secscrewdia+motortabwall*2),nemasize*2.54*10,ymountthick]);
-		}
+
 			//vertex interfaces
-			translate([nemasize*2.54*10,nemasize*2.54*5*sin(45),0])cylinder(r=tapsize/2, h=ymountthick);
-			translate([frameroddia*3*sin(45)+(nemasize*2.54*10),nemasize*2.54*5*sin(45)-frameroddia*3*sin(45),0])cylinder(r=frameroddia/2, h=ymountthick);
-			//motor screws
-			translate([nemasize*2.54*sin(45)*10,nemasize*2.54*sin(45)*10,0])cylinder(r=secscrewdia/2, h=ymountthick);
-			translate([0,nemasize*2.54*sin(45)*10,0])cylinder(r=secscrewdia/2, h=ymountthick);
-			translate([nemasize*2.54*sin(45)*10,0,0])cylinder(r=secscrewdia/2, h=ymountthick);
-			translate([0,0,0])cylinder(r=secscrewdia/2, h=ymountthick);
-			translate([nemasize*2.54*sin(45)*5,nemasize*2.54*sin(45)*5,0])cylinder(r=motorcenter/2, h=ymountthick); //motorcenter
+			translate([nemasize*2.54*sin(45)*5+motorbody/2+(nutapothem-frameroddia)+frameroddia/2,nemasize*2.54*5*sin(45),0])cylinder(r=frameroddia, h=frameroddia);
+			translate([frameroddia*3*sin(45)+(nemasize*2.54*sin(45)*5+motorbody/2+(nutapothem-frameroddia)+frameroddia/2),(nemasize*2.54*5*sin(45))-frameroddia*3*sin(45),0])cylinder(r=frameroddia, h=frameroddia);
+		
+			//connetors
+			translate([frameroddia*3*sin(45)+(nemasize*2.54*sin(45)*5+motorbody/2+(nutapothem-frameroddia)+frameroddia/2),(nemasize*2.54*5*sin(45))-frameroddia*3*sin(45),0])rotate([0,0,135])translate([0,-frameroddia,0])cube([frameroddia*3,frameroddia*2,frameroddia]);
+			translate([nemasize*2.54*5*sin(45),nemasize*2.54*5*sin(45)-frameroddia,0])cube([motorbody/2+frameroddia/2+(nutapothem-frameroddia),frameroddia*2,frameroddia]);
+
+			//motor construction
+			translate([nemasize*2.54*sin(45)*10,nemasize*2.54*sin(45)*10,0])cylinder(r=((nemasize*2.54*5*sin(45))-secscrewdia)/2, h=frameroddia);
+			translate([nemasize*2.54*sin(45)*10,0,0])cylinder(r=((nemasize*2.54*5*sin(45))-secscrewdia)/2, h=frameroddia);
+			translate([0,0,0])cylinder(r=((nemasize*2.54*5*sin(45))-secscrewdia)/2, h=frameroddia);
+			translate([nemasize*2.54*sin(45)*5,nemasize*2.54*sin(45)*5,0])cylinder(r=motorbody/2, h=frameroddia); //motorcenter
+			rotate([0,0,-45])translate([-((nemasize*2.54*5*sin(45))-secscrewdia)/2,0,0])cube([((nemasize*2.54*5*sin(45))-secscrewdia),nemasize*2.54*10,frameroddia]);
+			translate([nemasize*2.54*sin(45)*10,0,0])rotate([0,0,45])translate([-((nemasize*2.54*5*sin(45))-secscrewdia)/2,0,0])cube([((nemasize*2.54*5*sin(45))-secscrewdia),nemasize*2.54*5,frameroddia]);
+
+		}
+
+		//vertex interfaces
+		translate([nemasize*2.54*sin(45)*5+motorbody/2+(nutapothem-frameroddia)+frameroddia/2,nemasize*2.54*5*sin(45),-1])cylinder(r=frameroddia/2, h=frameroddia+2);
+		translate([frameroddia*3*sin(45)+(nemasize*2.54*sin(45)*5+motorbody/2+(nutapothem-frameroddia)+frameroddia/2),(nemasize*2.54*5*sin(45))-frameroddia*3*sin(45),-1])cylinder(r=frameroddia/2, h=frameroddia+2);
+
+		//motor screws
+		translate([nemasize*2.54*sin(45)*10,nemasize*2.54*sin(45)*10,-1])cylinder(r=secscrewdia/2, h=frameroddia+2);
+		translate([nemasize*2.54*sin(45)*10,0,-1])cylinder(r=secscrewdia/2, h=frameroddia+2);
+		translate([0,0,-1])cylinder(r=secscrewdia/2, h=frameroddia+2);
+		translate([nemasize*2.54*sin(45)*5,nemasize*2.54*sin(45)*5,-1])cylinder(r=motorcenter/2, h=frameroddia+2); //motorcenter
+
+		//cleanup
+		rotate([0,0,-45])translate([-((nemasize*2.54*5*sin(45))-secscrewdia)/2-motorbody+motorcenter,0,-1])cube([motorbody-motorcenter,nemasize*2.54*10,frameroddia+2]);
+		
 	}
+
