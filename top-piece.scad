@@ -19,11 +19,17 @@
 include <config.scad>;
 $fn = 31;
 
+//breakout vars
+toppiecethick = frameroddia;
+toprodwall = frameroddia/2;
+nutdia = 
+
 difference(){
 union(){
 		translate([0,0,(frameroddia/2+toprodwall)])rotate([-90,0,0])cylinder(r=frameroddia/2+toprodwall, h=nemasize*2.54*10*sin(45));
 		translate([toprodspacing,0,(frameroddia/2+toprodwall)])rotate([-90,0,0])cylinder(r=frameroddia/2+toprodwall, h=nemasize*2.54*10*sin(45));
 		translate([-frameroddia/4-toprodwall,0,0])cube([toprodspacing+(frameroddia/4+toprodwall)*2,nemasize*2.54*10*sin(45),toppiecethick]);
+
 		translate([toprodspacing/2-(nemasize*2.54*sin(45)*5),siderodwall+frameroddia/2-(nemasize*2.54*sin(45)*5)+bushingod/2+nutdia/2+nutwall,0]){
 		//motor construction
 		translate([nemasize*2.54*sin(45)*10,nemasize*2.54*sin(45)*10,0])cylinder(r=(secscrewdia/2+motortabwall), h=toppiecethick);

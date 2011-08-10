@@ -1,7 +1,7 @@
 // This is the config for an M8 Mendel sized printer.
 
 //Constants (These are used throughout the whole printer)
-frameroddia = 8; //the frame rod diameter
+frameroddia = 9; //the frame rod diameter
 smoothroddia = 8; //the smooth rod diameter
 bushingod = 15; //The prusabushing OD, you can change this to 15 to use LM8UU linear bearings 
 bushingheight = 24;
@@ -35,16 +35,10 @@ bearinginnerrace = 12; // the amount of the inner race diameter exposed
 
 layerheight = 0.32; //skeinforge/slicer layer height, used for the idler wasers right now. 
 
-bowdencabledia = 4;
 pinchwheeldia = 8;
-
-//Mendel Bowden Mount
-mountspacing = 50;
 
 //Groove Mount
 	//Default is pretty good for MakerGear insulators
 groovedia = 12;
 grooveheight = 4.5;
 
-//pen holder 
-penshaftheight = 30;
