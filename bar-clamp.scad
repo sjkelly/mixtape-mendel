@@ -18,16 +18,19 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 include <config.scad>;
 
-$fn = 60;
+$fn = 61;
 
+module barclamp(){
 difference() {
 	union() {
-	cylinder(r = smoothroddia/2+barclampwall, h=frameroddia+barclampwall*2);
-	translate([smoothroddia/2+frameroddia/2,smoothroddia/2+barclampwall,frameroddia/2+barclampwall])rotate([90,0,0])cylinder(r = frameroddia/2+barclampwall, h=smoothroddia+barclampwall*2);
-	translate([0,-smoothroddia/2-barclampwall,0])cube([frameroddia+smoothroddia/2+barclampwall/2, smoothroddia+ barclampwall*2, frameroddia/2 + barclampwall]);
-	translate([0,-smoothroddia/2-barclampwall,0])cube([frameroddia/2+smoothroddia/2, smoothroddia+ barclampwall*2, frameroddia + barclampwall*2]);		
+	cylinder(r = smoothroddia/2+frameroddia/2, h=frameroddia+frameroddia/2*2);
+	translate([smoothroddia/2+frameroddia/2,smoothroddia/2+frameroddia/2,frameroddia/2+frameroddia/2])rotate([90,0,0])cylinder(r = frameroddia/2+frameroddia/2, h=smoothroddia+frameroddia/2*2);
+	translate([0,-smoothroddia/2-frameroddia/2,0])cube([frameroddia+smoothroddia/2+frameroddia/2/2, smoothroddia+ frameroddia/2*2, frameroddia/2 + frameroddia/2]);
+	translate([0,-smoothroddia/2-frameroddia/2,0])cube([frameroddia/2+smoothroddia/2, smoothroddia+ frameroddia/2*2, frameroddia + frameroddia/2*2]);		
 	}
-translate([0,0,-1])cylinder(r = smoothroddia/2, h=frameroddia+barclampwall*2+2);	
-translate([smoothroddia/2+frameroddia/2,smoothroddia/2+barclampwall+1,frameroddia/2+barclampwall])rotate([90,0,0])cylinder(r = frameroddia/2, h=smoothroddia+barclampwall*2+2);
-translate([0,-smoothroddia/2,-1])cube([frameroddia+smoothroddia/2+barclampwall, smoothroddia, frameroddia + barclampwall*2+2]);
+translate([0,0,-1])cylinder(r = smoothroddia/2, h=frameroddia+frameroddia/2*2+2);	
+translate([smoothroddia/2+frameroddia/2,smoothroddia/2+frameroddia/2+1,frameroddia/2+frameroddia/2])rotate([90,0,0])cylinder(r = frameroddia/2, h=smoothroddia+frameroddia/2*2+2);
+translate([0,-smoothroddia/2,-1])cube([frameroddia+smoothroddia/2+frameroddia/2, smoothroddia, frameroddia + frameroddia/2*2+2]);
 }
+}
+barclamp();
