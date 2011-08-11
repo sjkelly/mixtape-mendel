@@ -20,7 +20,7 @@ pulleyteeth = 8;
 nutheight = 7; //Primary
 nutapothem = 13; //Primary
 
-secscrewdia = 3; //secondary 
+secscrewdia = 4; //secondary 
 secnutapothem = 5.5; //sec
 secnutheight = 2.4; //sec
 
