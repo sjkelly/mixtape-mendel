@@ -76,17 +76,13 @@ MDF
 | TODO |
 |------|
 
-Version 0.2
-	Extruder/ Bowden couplings
-	Document/cleanup
+Version 0.3
+	Document
+	Make work for linear bearings and pla bushings. All else is irrelephant. 
+	X end bushing mounts turned 90 degrees
 	Huxley Class config
 	better x belt routing
-	no more multipliers
-Version 0.3
-	X end bushing mounts turned 90 degrees
-	Tapping turned on/off
 	vertex feet
-	Utilize motor width on y mount
 	Pulley script (T5 T2.5)
 	Endstops
 
