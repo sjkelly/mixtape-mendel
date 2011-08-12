@@ -1,9 +1,9 @@
 The Mixtape Mendel is a work designed to increase the avaiability of RepRaps. We want to let the RP be built to your needs. To do so, it is important to keep everything as parametric as possible. During the original scripting of the Mixtape Mendel, this was not the case. Each file had individual variables the controlled each part independently. Eventually the value of controlling each part from a single configuration became apparant. Even more so the value of parameterizing as little as possible, or rather what the user was utilizing for vitamins, was a central focus. Doing so we could make a much more third world friendly 3D printer. 
 
 	To do so, general rules need to be followed...
-		- Scaling factors need are depreciated. Walls and thicknesses are rather hard coded values.
-		- It would be best to use existing configuration as much as possible.
-		- Give the user as much control as possible!
+		- Scaling factors are used to simplify the user configuration experience.
+		- It would be best to use existing configuration as much as possible(i.e. using frameroddia as a refrence).
+		- Give the user as much control as possible. . . until they get confused!
 		- Try and use only two screw diameters (Primary and Secondary).
 
 The Mixtape Mendel in it's most basic form is a 3 axis cartesian machine. Using the above constrains, we should be able to provide a readily modular and customizable platform. New tooling as long as it is unique, parametric, licensed GPL and follows the above, will be accepted into the main repository. 
