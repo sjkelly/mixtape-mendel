@@ -50,7 +50,8 @@ Most of this is sampled from manufacturer datasheets, and is generally accurate.
 */
 
 //belt thickness
-if(pulleypitch = 5){ beltthick = 2.2; } //T5
-if(pulleypitch = 5.08) beltthick = 2.3; //XL
-if(pulleypitch = 2.5) beltthick = 1.3; //T2.5
-if(pulleypitch = 2.032) beltthick = 1.14; //MXL 
+beltthick = (pulleypitch == 5) ? 2.2 : (pulleypitch == 5.08) ? 2.3 : (pulleypitch == 2.5) ? 1.3 : 1.14;
+//XL = 2.3
+//MXL = 1.14
+//T2.5 = 1.3
+//T5 = 2.2
