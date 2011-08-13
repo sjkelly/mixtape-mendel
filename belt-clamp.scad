@@ -23,13 +23,13 @@ $fn = 30;
 
 		union(){
 
-			translate([clampholedia/2+clampholewall,clampholedia/2+clampholewall,0])cylinder(r = clampholedia/2+clampholewall, h = clampthick);
-			translate([clampholedia*1.5+clampholewall+beltwidth,clampholedia/2+clampholewall,0])cylinder(r = clampholedia/2+clampholewall, h = clampthick);
-			translate([clampholedia/2+clampholewall,0,0])cube([beltwidth+clampholedia,clampholedia+clampholewall*2,clampthick]);
+			cylinder(r = secscrewdia, h = secnutheight);
+			translate([secscrewdia*2 + beltwidth,0,0])cylinder(r = secscrewdia, h = secnutheight);
+			translate([0,-secscrewdia,0])cube([beltwidth+secscrewdia*2,secscrewdia*2,secnutheight]);
 
 		}
 
-		translate([clampholedia/2+clampholewall,clampholedia/2+clampholewall,0])cylinder(r = clampholedia/2, h = clampthick);
-		translate([clampholedia*1.5+clampholewall+beltwidth,clampholedia/2+clampholewall,0])cylinder(r = clampholedia/2, h = clampthick);
+		translate([0,0,-1])cylinder(r = secscrewdia/2, h = secnutheight + 2);
+		translate([secscrewdia*2 + beltwidth,0,-1])cylinder(r = secscrewdia/2, h = secnutheight + 2);
 
 	}
