@@ -25,6 +25,8 @@ nutheight = 7; //Primary
 nutapothem = 13; //Primary nut apothem (wrench size)
 
 secscrewdia = 4; //secondary 
+secscrewheaddia = 6; //secondary screw head diameter
+secscrewheadheight = 3; //secondary screw head height
 secnutapothem = 5.5; //secondary nut apothem (wrench size)
 secnutheight = 2.4; //secondary
 
