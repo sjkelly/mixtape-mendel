@@ -22,21 +22,22 @@ holderwall = frameroddia+(pulleydia/2-frameroddia/2)-mdfthick-(bushingod/2-smoot
 
 $fn = 30;
 
-difference(){
-	union(){
-		translate([0,0,0])cylinder(r=bushingod/2+holderwall, h=bushingheight);
-		translate([-bushingod/2-holderwall,0,0])cube([bushingod+holderwall*2,bushingod/2+holderwall,bushingheight]);
-		translate([-bushingod/2-holderwall-bushingheight,bushingod/2,0])cube([bushingod+holderwall*2+bushingheight*2,holderwall,bushingheight/2]);
-		translate([-bushingod/2-holderwall-bushingheight/2,bushingod/2,0])cube([bushingod+holderwall*2+bushingheight,holderwall,bushingheight]);
-		translate([-bushingod/2-holderwall-bushingheight/2,bushingod/2,bushingheight/2])rotate([-90,0,0])cylinder(r=bushingheight/2, h=holderwall);
-		translate([bushingod/2+holderwall+bushingheight/2,bushingod/2,bushingheight/2])rotate([-90,0,0])cylinder(r=bushingheight/2, h=holderwall);
+	difference(){
 
+		union(){
+	
+			translate([0,0,0])cylinder(r=bushingod/2+holderwall, h=bushingheight);
+			translate([-bushingod/2-holderwall,0,0])cube([bushingod+holderwall*2,bushingod/2+holderwall,bushingheight]);
+			translate([-bushingod/2-holderwall-bushingheight,bushingod/2,0])cube([bushingod+holderwall*2+bushingheight*2,holderwall,bushingheight/2]);
+			translate([-bushingod/2-holderwall-bushingheight/2,bushingod/2,0])cube([bushingod+holderwall*2+bushingheight,holderwall,bushingheight]);
+			translate([-bushingod/2-holderwall-bushingheight/2,bushingod/2,bushingheight/2])rotate([-90,0,0])cylinder(r=bushingheight/2, h=holderwall);
+			translate([bushingod/2+holderwall+bushingheight/2,bushingod/2,bushingheight/2])rotate([-90,0,0])cylinder(r=bushingheight/2, h=holderwall);
 
+		}
 
+		translate([-bushingod/2-holderwall-bushingheight/2,bushingod/2-1,bushingheight/2])rotate([-90,0,0])cylinder(r=secscrewdia/2, h=holderwall+2);
+		translate([bushingod/2+holderwall+bushingheight/2,bushingod/2-1,bushingheight/2])rotate([-90,0,0])cylinder(r=secscrewdia/2, h=holderwall+2);
+		translate([0,0,0])cylinder(r=bushingod/2, h=bushingheight);
+		translate([-bushingod/2,0,0])cube([bushingod,bushingod/2,bushingheight]);
+		translate([-bushingod/2-holderwall,-bushingod/2-holderwall,0])cube([bushingod+holderwall*2,bushingod*0.25+holderwall,bushingheight]);
 	}
-	translate([-bushingod/2-holderwall-bushingheight/2,bushingod/2-1,bushingheight/2])rotate([-90,0,0])cylinder(r=secscrewdia/2, h=holderwall+2);
-	translate([bushingod/2+holderwall+bushingheight/2,bushingod/2-1,bushingheight/2])rotate([-90,0,0])cylinder(r=secscrewdia/2, h=holderwall+2);
-	translate([0,0,0])cylinder(r=bushingod/2, h=bushingheight);
-	translate([-bushingod/2,0,0])cube([bushingod,bushingod/2,bushingheight]);
-	translate([-bushingod/2-holderwall,-bushingod/2-holderwall,0])cube([bushingod+holderwall*2,bushingod*0.25+holderwall,bushingheight]);
-}

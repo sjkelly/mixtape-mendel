@@ -43,3 +43,14 @@ layerheight = 0.32; //skeinforge/slicer layer height, used for the idler wasers 
 groovedia = 12;
 grooveheight = 4.5;
 
+
+/*
+Below here are reworld correlations based on user specified input above.
+Most of this is sampled from manufacturer datasheets, and is generally accurate. This will/can be expanded as needed.
+*/
+
+//belt thickness
+if(pulleypitch = 5){ beltthick = 2.2; } //T5
+if(pulleypitch = 5.08) beltthick = 2.3; //XL
+if(pulleypitch = 2.5) beltthick = 1.3; //T2.5
+if(pulleypitch = 2.032) beltthick = 1.14; //MXL 
