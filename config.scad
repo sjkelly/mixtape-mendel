@@ -30,6 +30,9 @@ secscrewheadheight = 3; //secondary screw head height
 secnutapothem = 5.5; //secondary nut apothem (wrench size)
 secnutheight = 2.4; //secondary
 
+zipheight = 2; //ziptie height
+zipwidth = 4; //ziptie width
+
 mdfthick = 6; //thickness of MDF (You can use other wood, acrylic, lexan, etc)
 
 bearingid = 8; // 608
@@ -42,6 +45,7 @@ layerheight = 0.32; //skeinforge/slicer layer height, used for the idler wasers 
 	//Default is pretty good for MakerGear insulators
 groovedia = 12;
 grooveheight = 4.5;
+
 
 
 /*
