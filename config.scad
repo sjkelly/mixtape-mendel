@@ -49,8 +49,7 @@ grooveheight = 4.5;
 
 
 /*
-Below here are reworld correlations based on user specified input above.
-Most of this is sampled from manufacturer datasheets, and is generally accurate. This will/can be expanded as needed.
+Below here are reworld correlations based on user specified input above and constants.
 */
 
 //belt thickness
@@ -59,3 +58,5 @@ beltthick = (pulleypitch == 5) ? 2.2 : (pulleypitch == 5.08) ? 2.3 : (pulleypitc
 //MXL = 1.14
 //T2.5 = 1.3
 //T5 = 2.2
+
+pi = 3.141592654;
