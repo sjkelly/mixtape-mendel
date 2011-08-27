@@ -35,7 +35,9 @@ $fn = 30;
 				cube([bushingod*1.5,bushingheight+4,bushingod*1.5/2]);
 				
 			 	//make some tabs yo
-				cylinder(r = 
+				translate([-secscrewheaddia/2,bushingheight/2+2,0])cylinder(r = secscrewheaddia/2, h = bushingod/4);
+				translate([bushingod*1.5+secscrewheaddia/2,bushingheight/2+2,0])cylinder(r = secscrewheaddia/2, h = bushingod/4);
+				translate([-secscrewheaddia/2,bushingheight/2+2-secscrewheaddia/2,0])cube([bushingod*1.5+secscrewheaddia,secscrewheaddia,bushingod/4]);
 	
 			}
 			 //linear bearing hole
@@ -48,9 +50,13 @@ $fn = 30;
 			//cut out top of holder
 			translate([bushingod/4,-1,bushingod/4])cube([bushingod,bushingheight+6,bushingod/2]);
 
+			//mounting holes
+			translate([-secscrewheaddia/2,bushingheight/2+2,-1])cylinder(r = secscrewdia/2, h = bushingod/4+2);
+			translate([bushingod*1.5+secscrewheaddia/2,bushingheight/2+2,-1])cylinder(r = secscrewdia/2, h = bushingod/4+2);
+
 			//ziptie slots
-			
-			
+			translate([-1,bushingheight/6+2,-1])cube([bushingod*1.5+2,zipwidth,zipheight]);
+			translate([-1,bushingheight*5/6-zipwidth+2,-1])cube([bushingod*1.5+2,zipwidth,zipheight]);
 		}
 
 		//Holder tabs
