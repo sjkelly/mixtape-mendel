@@ -12,6 +12,7 @@ bushingheight = 24;
 nemasize = 1.7; //Nema Size TODO just make this 17, 23,14 etc
 motorcenter = 23; //center hole size for the motor mount. If your motor center flange is smaller you can beef up parts this way. 
 motorshaftdia = 5; // Motor shaft diameter
+motorshaftlength = 22;
 motorbody = 43;
 
 pulleypitch = 5; //trapezoidal pulley script TODO
