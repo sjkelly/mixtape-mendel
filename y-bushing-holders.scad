@@ -55,8 +55,8 @@ $fn = 30;
 			translate([bushingod*1.5+secscrewheaddia/2,bushingheight/2+2,-1])cylinder(r = secscrewdia/2, h = bushingod/4+2);
 
 			//ziptie slots
-			translate([-1,bushingheight/6+2,-1])cube([bushingod*1.5+2,zipwidth,zipheight]);
-			translate([-1,bushingheight*5/6-zipwidth+2,-1])cube([bushingod*1.5+2,zipwidth,zipheight]);
+			translate([-1,2,-1])cube([bushingod*1.5+2,zipwidth,zipheight+1]);
+			translate([-1,bushingheight-zipwidth+2,-1])cube([bushingod*1.5+2,zipwidth,zipheight+1]);
 		}
 
 		//Holder tabs
